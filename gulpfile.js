@@ -14,7 +14,7 @@ gulp.task('js', function(){
         //将ES6代码转译为可执行的JS代码
         .pipe(babel())
         //js压缩
-        .pipe(uglify())
+        // .pipe(uglify())
         //将转译压缩后的文件输出到dist/static/scripts下（假如没有dist目录则自动生成dist目录）
         .pipe(gulp.dest('dist/static/scripts'))
         .pipe(connect.reload())
